@@ -142,7 +142,7 @@ Modality-aligned contrastive learning increases model robustness against noise a
 
 ```bash
 # Clone the repository
-git clone https://github.com/<your-username>/multimodal-thyroid-detection.git
+git clone https://github.com/Amulya3121/multimodal-Transfer-Learning-Framework.git
 cd multimodal-thyroid-detection
 
 # Create a virtual environment
