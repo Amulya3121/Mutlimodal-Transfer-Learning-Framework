@@ -50,7 +50,7 @@ The system outperforms conventional image-only YOLO baselines by incorporating s
 
 ---
 
-##System Architecture
+## System Architecture
 
 ```
 ┌─────────────────────────────────────────────────────┐
@@ -93,7 +93,7 @@ The system outperforms conventional image-only YOLO baselines by incorporating s
 
 ---
 
-##Modules
+## Modules
 
 | Module | Description |
 |---|---|
@@ -106,7 +106,7 @@ The system outperforms conventional image-only YOLO baselines by incorporating s
 
 ---
 
-##Algorithms Used
+## Algorithms Used
 
 ### 1. VGGNet — Ultrasound Image Feature Extraction
 Uses a deep architecture with small convolutional filters to capture fine-grained texture variations and structural patterns. Fine-tuned on thyroid datasets via transfer learning.
@@ -125,7 +125,7 @@ Modality-aligned contrastive learning increases model robustness against noise a
 
 ---
 
-##Dataset
+## Dataset
 
 - Combined thyroid ultrasound dataset with annotations for:
   - Normal thyroid
@@ -138,7 +138,7 @@ Modality-aligned contrastive learning increases model robustness against noise a
 
 ---
 
-##Installation
+## Installation
 
 ```bash
 # Clone the repository
@@ -170,7 +170,7 @@ tqdm>=4.62.0
 
 ---
 
-##Usage
+## Usage
 
 ### 1. Preprocess Data
 ```bash
@@ -200,7 +200,7 @@ Then navigate to `http://localhost:5000` in your browser.
 
 ---
 
-##Results
+## Results
 
 | Metric | Image-Only Baseline | Proposed Multimodal |
 |---|---|---|
@@ -230,7 +230,7 @@ Then navigate to `http://localhost:5000` in your browser.
 
 ---
 
-##References
+## References
 
 1. Haugen H. R. et al., "2015 American Thyroid Association management guidelines," *Thyroid*, vol. 26, no. 1, 2016.
 2. World Health Organization, "Global prevalence of thyroid disorders," WHO Press, 2022.
@@ -245,13 +245,13 @@ Then navigate to `http://localhost:5000` in your browser.
 
 ---
 
-##License
+## License
 
 This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
 
 ---
 
-##Acknowledgements
+## Acknowledgements
 
 This work was conducted at the **Department of Computer Science & Engineering, NRI Institute of Technology**, Andhra Pradesh, India. We acknowledge the open-source deep learning communities and medical imaging researchers whose prior work made this research possible.
 
