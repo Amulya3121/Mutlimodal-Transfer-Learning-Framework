@@ -1,4 +1,4 @@
-# 🦋 Multimodal Transfer Learning Framework for Automated Detection of Goitre and Thyroid Tumours in Ultrasound Imaging
+# Multimodal Transfer Learning Framework for Automated Detection of Goitre and Thyroid Tumours in Ultrasound Imaging
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python)
 ![Deep Learning](https://img.shields.io/badge/Deep%20Learning-PyTorch-orange?logo=pytorch)
@@ -9,7 +9,7 @@
 
 ---
 
-## 📌 Table of Contents
+## Table of Contents
 
 - [Overview](#overview)
 - [Features](#features)
@@ -20,13 +20,12 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [Results](#results)
-- [Project Structure](#project-structure)
 - [Authors](#authors)
 - [References](#references)
 
 ---
 
-## 🔍 Overview
+## Overview
 
 Thyroid disorders such as **diffuse goitre** and **thyroid tumours** are among the most prevalent endocrine diseases. Early detection is critical for effective treatment. This project presents an automated diagnostic framework that:
 
@@ -39,19 +38,19 @@ The system outperforms conventional image-only YOLO baselines by incorporating s
 
 ---
 
-## ✨ Features
+## Features
 
-- ✅ Multimodal input — ultrasound images + voice samples + clinical metadata
-- ✅ Transfer learning from large-scale medical datasets (VGGNet, ResNet)
-- ✅ C2fA attention module for robust spatial feature extraction
-- ✅ Cross-modal transformer fusion for complementary representation learning
-- ✅ Modality-aligned contrastive learning for noise robustness
-- ✅ Real-time detection with bounding boxes and confidence scores
-- ✅ Scalable for clinical and telemedicine settings
+- Multimodal input — ultrasound images + voice samples + clinical metadata
+- Transfer learning from large-scale medical datasets (VGGNet, ResNet)
+- C2fA attention module for robust spatial feature extraction
+- Cross-modal transformer fusion for complementary representation learning
+- Modality-aligned contrastive learning for noise robustness
+- Real-time detection with bounding boxes and confidence scores
+- Scalable for clinical and telemedicine settings
 
 ---
 
-## 🏗️ System Architecture
+##System Architecture
 
 ```
 ┌─────────────────────────────────────────────────────┐
@@ -94,7 +93,7 @@ The system outperforms conventional image-only YOLO baselines by incorporating s
 
 ---
 
-## 🧩 Modules
+##Modules
 
 | Module | Description |
 |---|---|
@@ -107,7 +106,7 @@ The system outperforms conventional image-only YOLO baselines by incorporating s
 
 ---
 
-## ⚙️ Algorithms Used
+##Algorithms Used
 
 ### 1. VGGNet — Ultrasound Image Feature Extraction
 Uses a deep architecture with small convolutional filters to capture fine-grained texture variations and structural patterns. Fine-tuned on thyroid datasets via transfer learning.
@@ -126,7 +125,7 @@ Modality-aligned contrastive learning increases model robustness against noise a
 
 ---
 
-## 📊 Dataset
+##Dataset
 
 - Combined thyroid ultrasound dataset with annotations for:
   - Normal thyroid
@@ -139,7 +138,7 @@ Modality-aligned contrastive learning increases model robustness against noise a
 
 ---
 
-## 🛠️ Installation
+##Installation
 
 ```bash
 # Clone the repository
@@ -171,7 +170,7 @@ tqdm>=4.62.0
 
 ---
 
-## 🚀 Usage
+##Usage
 
 ### 1. Preprocess Data
 ```bash
@@ -201,7 +200,7 @@ Then navigate to `http://localhost:5000` in your browser.
 
 ---
 
-## 📈 Results
+##Results
 
 | Metric | Image-Only Baseline | Proposed Multimodal |
 |---|---|---|
@@ -217,46 +216,9 @@ Then navigate to `http://localhost:5000` in your browser.
 
 ---
 
-## 📁 Project Structure
-
-```
-multimodal-thyroid-detection/
-│
-├── data/
-│   ├── ultrasound/          # Ultrasound image datasets
-│   ├── voice/               # Voice sample datasets
-│   └── processed/           # Preprocessed features
-│
-├── models/
-│   ├── vggnet.py            # VGGNet feature extractor
-│   ├── resnet.py            # ResNet feature extractor
-│   ├── fusion.py            # Cross-modal transformer fusion
-│   └── classifier.py        # Classification head
-│
-├── modules/
-│   ├── ultrasound_module.py
-│   ├── voice_module.py
-│   ├── fusion_module.py
-│   └── classification_module.py
-│
-├── utils/
-│   ├── preprocess.py
-│   ├── metrics.py
-│   └── visualize.py
-│
-├── checkpoints/             # Saved model weights
-├── results/                 # Output predictions and plots
-├── app.py                   # Web interface
-├── train.py                 # Training script
-├── evaluate.py              # Evaluation script
-├── infer.py                 # Inference script
-├── requirements.txt
-└── README.md
-```
-
 ---
 
-## 👩‍💻 Authors
+## Authors
 
 | Name | Institution | Email |
 |---|---|---|
@@ -268,7 +230,7 @@ multimodal-thyroid-detection/
 
 ---
 
-## 📚 References
+##References
 
 1. Haugen H. R. et al., "2015 American Thyroid Association management guidelines," *Thyroid*, vol. 26, no. 1, 2016.
 2. World Health Organization, "Global prevalence of thyroid disorders," WHO Press, 2022.
@@ -283,16 +245,15 @@ multimodal-thyroid-detection/
 
 ---
 
-## 📄 License
+##License
 
 This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 🙏 Acknowledgements
+##Acknowledgements
 
 This work was conducted at the **Department of Computer Science & Engineering, NRI Institute of Technology**, Andhra Pradesh, India. We acknowledge the open-source deep learning communities and medical imaging researchers whose prior work made this research possible.
 
 ---
 
-*⭐ If you find this project helpful, please consider starring the repository!*
